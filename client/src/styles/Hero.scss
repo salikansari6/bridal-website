@@ -1,0 +1,55 @@
+@import "./variables.scss";
+
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: top !important;
+  animation: fade-in 1s ease-in-out;
+
+  &__text {
+    margin: 10% 0 0 5%;
+    padding: 0 1rem 1.5rem 1rem;
+    display: inline-block;
+    color: $banner-text-color;
+    border-radius: 0.8rem;
+    background: rgba($color-secondary, 0.7);
+    width: 40%;
+
+    &__banner {
+      font-family: "Playfair Display", serif;
+      font-style: italic;
+      text-align: center;
+      font-size: 3rem;
+      padding: 1rem;
+    }
+  }
+
+  &__offers {
+    position: absolute;
+    bottom: 5%;
+    display: inline-flex;
+    padding: 0.35rem;
+    align-items: center;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    background: $color-secondary;
+    border-radius: 0.4rem;
+    color: $banner-text-color;
+    text-decoration: none;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

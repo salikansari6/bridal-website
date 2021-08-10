@@ -1,0 +1,45 @@
+.credit-debit {
+  form {
+    display: flex;
+    flex-direction: column;
+
+    :nth-child(n) {
+      font-size: 0.8rem;
+    }
+
+    table {
+      td {
+        padding: 0 0 0.5rem 0.5rem;
+      }
+
+      @media (max-width: 768px) {
+        tr:last-child {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+
+    label {
+      font-weight: 600;
+      color: rgb(15, 15, 70);
+      margin: 0 0 0.5rem 0;
+      display: block;
+
+      :not(:first-child) {
+        margin: 0.5rem 0 0.5rem 0;
+      }
+    }
+
+    input {
+      display: inline-block;
+      width: 100%;
+
+      border-radius: 0.3rem;
+      padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+      border: 1px solid black;
+    }
+  }
+
+  //   font-size: 10px;
+}

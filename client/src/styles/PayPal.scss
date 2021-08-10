@@ -1,0 +1,38 @@
+.paypal {
+  form {
+    display: flex;
+    flex-direction: column;
+
+    :nth-child(n) {
+      font-size: 0.8rem;
+    }
+
+    label {
+      font-weight: 600;
+      color: rgb(15, 15, 70);
+      margin: 0 0 0.5rem 0;
+
+      &:not(:first-child) {
+        margin: 0.5rem 0 0.5rem 0;
+      }
+    }
+
+    input {
+      display: inline-block;
+      width: 30%;
+
+      @media (max-width: 768px) {
+        width: 60%;
+      }
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+
+      border-radius: 0.3rem;
+      padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+      border: 1px solid black;
+    }
+  }
+
+  //   font-size: 10px;
+}

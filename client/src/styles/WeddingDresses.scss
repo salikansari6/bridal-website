@@ -1,0 +1,23 @@
+.wedding-dresses {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  grid-template-areas: "filter p p p";
+}
+
+.filter {
+  grid-area: filter;
+}
+
+@media (max-width: 500px) {
+  .wedding-dresses {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "p";
+  }
+}
+
+.product-list {
+  grid-area: p;
+}

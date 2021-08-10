@@ -1,0 +1,21 @@
+.product-list {
+  padding: 3rem;
+  display: grid;
+  position: relative;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  animation: fade-in 0.5s ease-out;
+
+  a {
+    color: initial;
+  }
+}
+
+@media (max-width: 800px) {
+  .product-list {
+    padding: 1.5rem;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}

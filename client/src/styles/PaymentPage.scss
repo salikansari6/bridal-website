@@ -1,0 +1,36 @@
+@import "./variables.scss";
+
+.payment-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    color: $color-primary;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .payment {
+    padding-top: 0.5rem;
+    border-top: 1px solid black;
+    width: 70%;
+
+    > :nth-child(n) {
+      padding-top: 1rem;
+      > label {
+        display: inline-block;
+        padding: 1rem;
+        // margin-bottom: 0.5rem;
+      }
+
+      > div:last-of-type {
+        padding: 1rem;
+        border-top: 2px solid rgba($color: gray, $alpha: 0.5);
+        border-bottom: 2px solid rgba($color: gray, $alpha: 0.5);
+      }
+    }
+  }
+}

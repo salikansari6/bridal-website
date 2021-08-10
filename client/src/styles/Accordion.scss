@@ -1,0 +1,28 @@
+@import "./variables.scss";
+
+.accordion {
+  padding: 1rem;
+  cursor: pointer;
+
+  &__heading {
+    display: flex;
+    align-items: center;
+  }
+
+  &:nth-child(n) {
+    box-shadow: 0 1px 4px rgb(177, 173, 173);
+  }
+
+  .sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0.7rem;
+    width: 0.7rem;
+    padding: 0.4rem;
+    margin-right: 0.5rem;
+    background: $color-secondary;
+    color: white;
+    border-radius: 50%;
+  }
+}

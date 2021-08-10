@@ -1,0 +1,45 @@
+@import "./variables.scss";
+
+.trending {
+  height: auto;
+  padding: 1.5rem;
+
+  .swiper-container {
+    padding: 2rem 4rem 2rem 4rem;
+    height: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .swiper-container {
+      padding: 1rem 0;
+      width: auto;
+
+      // width: auto;
+
+      .swiper-pagination {
+        bottom: -5px;
+      }
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        display: none;
+      }
+    }
+  }
+
+  // @media (max-width: 500px) {
+  //   .swiper-slide {
+  //     padding: 1rem 0;
+  //     width: 180px !important;
+  //   }
+  // }
+
+  &__title {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    text-align: center;
+    color: $color-primary;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,19 @@
+@import "./variables.scss";
+
+.filter {
+  background: #eff3f5fd;
+  // padding: 1rem;
+  &__heading {
+    font-family: $playfair-font;
+    color: $color-primary;
+    transform: scaleY(1.1);
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+
+.u--sticky {
+  position: sticky;
+  top: 1.5rem;
+}
