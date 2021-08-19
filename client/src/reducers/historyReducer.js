@@ -6,8 +6,9 @@ const historyReducer = (state = [], action) => {
       );
       if (!inHistory) {
         return [...state, action.payload.product];
+      } else {
+        return state;
       }
-      break;
     default:
       return state;
   }
