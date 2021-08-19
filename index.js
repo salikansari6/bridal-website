@@ -9,13 +9,10 @@ require("dotenv").config();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect(
-  "mongodb+srv://salik:pclover@cluster0.dozld.mongodb.net/biyahspecials?retryWrites=true&w=majority",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
-);
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 const PORT = process.env.PORT || 4000;
 
