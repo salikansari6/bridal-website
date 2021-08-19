@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const UPI = () => {
-    return (
-        <div>
-            UPI
-        </div>
-    )
-}
+  return <div>UPI</div>;
+};
 
-export default UPI
+export default UPI;

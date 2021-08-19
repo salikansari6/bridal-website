@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams, Link } from "react-router-dom";
-import { useSelector } from "react-redux";
 import ImageGallery from "./ImageGallery";
 import "../styles/ProductPage.scss";
 import FavoriteIcon from "@material-ui/icons/Favorite";
@@ -20,7 +19,7 @@ const ProductPage = () => {
     axios.get(`http://localhost:4000/product/${id}`).then((res) => {
       setProduct(...res.data);
     });
-  }, []);
+  }, [id]);
   const [triggerAnimation, setTriggerAnimation] = useState(false);
 
   useEffect(() => {

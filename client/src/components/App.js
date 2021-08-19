@@ -14,7 +14,6 @@ import ProductPage from "./ProductPage";
 import Cart from "./Cart";
 import PaymentPage from "../components/Payment/PaymentPage";
 import { CSSTransition } from "react-transition-group";
-import { ShowChart } from "@material-ui/icons";
 
 const App = () => {
   useEffect(() => {

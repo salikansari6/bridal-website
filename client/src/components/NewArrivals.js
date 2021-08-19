@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const NewArrivals = () => {
-    return (
-        <div>
-            New Arrivals
-        </div>
-    )
-}
+  return <div>New Arrivals</div>;
+};
 
-export default NewArrivals
+export default NewArrivals;
