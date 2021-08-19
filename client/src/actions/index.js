@@ -53,7 +53,9 @@ export const removeFromCart = (product) => {
 
 export const fetchProducts = () => {
   return async (dispatch) => {
-    const { data } = await axios.get("http://localhost:4000/products");
+    const { data } = await axios.get(
+      "https://biyahspecials.herokuapp.com/products"
+    );
 
     dispatch({ type: "FETCH_PRODUCTS", payload: data });
   };

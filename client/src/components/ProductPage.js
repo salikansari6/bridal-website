@@ -16,9 +16,11 @@ const ProductPage = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   useEffect(() => {
-    axios.get(`http://localhost:4000/product/${id}`).then((res) => {
-      setProduct(...res.data);
-    });
+    axios
+      .get(`https://biyahspecials.herokuapp.com/product/${id}`)
+      .then((res) => {
+        setProduct(...res.data);
+      });
   }, [id]);
   const [triggerAnimation, setTriggerAnimation] = useState(false);
 

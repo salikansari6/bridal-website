@@ -1,7 +1,7 @@
 import axios from "axios";
 // import {productList} from '../utils/'
 var productList = [];
-axios.get("http://localhost:4000/products").then((res) => {
+axios.get("https://biyahspecials.herokuapp.com/products").then((res) => {
   productList = [...res.data];
 });
 
